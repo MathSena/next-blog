@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { Footer } from '@/components/footer/Footer'
 import { ThemeContextProvider } from '@/context/ThemeContext'
 import { ThemeProvider } from '@/providers/ThemeProvider'
+import Featured from '@/components/featured/Featured'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body className={inter.className}>
         <ThemeContextProvider>
           <ThemeProvider>
